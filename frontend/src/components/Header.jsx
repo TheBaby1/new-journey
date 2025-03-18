@@ -1,4 +1,4 @@
-
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function Header(){
 
     return (
@@ -6,7 +6,7 @@ function Header(){
             <h1>My Website</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><Link to="/Mof">MoF</Link></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contact</a></li>
