@@ -7,6 +7,8 @@ import Student from './components/Student.jsx'
 import Mof from './components/Mof.jsx'
 import UserGreeting from './components/UserGreeting.jsx'
 import List from './components/List.jsx'
+import Button2 from './components/Button2.jsx'
+import ProfilePicture from './components/ProfilePicture.jsx'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -35,6 +37,8 @@ function App() {
       <UserGreeting isLoggedIn={true} userName="TheBaby"></UserGreeting>
 
       <Button></Button>
+      <Button2></Button2>
+      <ProfilePicture></ProfilePicture>
       <Header></Header>
       {fruits.length > 0 ? <List items={fruits} category="Fruits"></List> : null}
       {vegetables.length > 0 ? <List items={vegetables} category="Vegetables"></List> : null}
