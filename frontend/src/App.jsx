@@ -9,6 +9,8 @@ import UserGreeting from './components/UserGreeting.jsx'
 import List from './components/List.jsx'
 import Button2 from './components/Button2.jsx'
 import ProfilePicture from './components/ProfilePicture.jsx'
+import MyComponent from './components/MyComponent.jsx'
+import Counter from './components/Counter.jsx'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
       <Button2></Button2>
       <ProfilePicture></ProfilePicture>
       <Header></Header>
+      <MyComponent></MyComponent>
+      <Counter></Counter>
       {fruits.length > 0 ? <List items={fruits} category="Fruits"></List> : null}
       {vegetables.length > 0 ? <List items={vegetables} category="Vegetables"></List> : null}
       <Student name="Spongebob" age={30} isStudent={true}></Student>
